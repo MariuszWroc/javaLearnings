@@ -17,32 +17,16 @@ public class Parent {
 		return publicName;
 	}
 
-	public void setPublicName(String publicName) {
-		this.publicName = publicName;
-	}
-
 	public Long getPackageNumber() {
 		return packageNumber;
-	}
-
-	public void setPackageNumber(Long packageNumber) {
-		this.packageNumber = packageNumber;
 	}
 
 	public Double getProtectedNumber() {
 		return protectedNumber;
 	}
 
-	public void setProtectedNumber(Double protectedNumber) {
-		this.protectedNumber = protectedNumber;
-	}
-
 	public Integer getPrivateNumber() {
 		return privateNumber;
-	}
-
-	public void setPrivateNumber(Integer privateNumber) {
-		this.privateNumber = privateNumber;
 	}
 
 	@Override

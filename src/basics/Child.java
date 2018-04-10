@@ -6,12 +6,19 @@ public class Child extends Parent{
 		super(publicName, packageNumber, protectedNumber, privateNumber);
 	}
 	
-	public void checkFields() {
+	public void checkValues() {
 		String name = super.publicName;
 		Long packageNumber = super.packageNumber;
-		Double number = super.protectedNumber;
+		Double protectedNumber = super.protectedNumber;
 		
-		System.out.println(name + " " + number + " " + packageNumber);
+		System.out.println("Test 1) " + name + " " + packageNumber + " " + protectedNumber);
+		
+		String nameByGet = super.getPublicName();
+		Long packageNumberByGet = super.getPackageNumber();
+		Double protectedNumberByGet = super.getProtectedNumber();
+		Integer privateNumberByGet = super.getPrivateNumber();
+		
+		System.out.println("Test 2) " + nameByGet + " " + packageNumberByGet + " " + protectedNumberByGet + " " + privateNumberByGet);
 	}
 	
 }

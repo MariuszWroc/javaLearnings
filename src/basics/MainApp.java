@@ -20,7 +20,9 @@ public class MainApp {
 		
 		Parent parent = new Parent("test parent", 10l, 20.0, 30);
 		Child child = new Child("test child", 10l, 20.0, 30);
-		child.checkFields();
+		child.checkValues();
 		
+		ChildOfFinalParent child2 = new ChildOfFinalParent("aaa");
+		child2.getLastName();
 	}
 }
