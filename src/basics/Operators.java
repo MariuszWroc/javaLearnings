@@ -10,12 +10,10 @@ public class Operators {
 
 		int x = 1;
 
-		// 'Geeks in &&' is NOT printed because x is 0
 		if (x == 0 && printInfo()) {
 			System.out.println("Operator logiczny zadzia³a³");
 		}
 
-		// 'Geeks in &' is printed
 		if (x == 0 & printInfo()) {
 			System.out.println("Operator bitowy zadzia³a³");
 		}
