@@ -8,6 +8,11 @@ public class Operators {
 		int result = (testVariable.equals("some text")) ? 0 : 1;
 		System.out.println(result);
 
+		int sum=1;
+		
+		sum+=1;
+		int myIntFromDouble = (int) 10.2;
+		
 		int x = 1;
 
 		if (x == 0 && printInfo()) {
