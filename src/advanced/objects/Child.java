@@ -1,4 +1,6 @@
-package basics;
+package advanced.objects;
+
+import advanced.structures.Parent;
 
 public class Child extends Parent{
 

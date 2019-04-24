@@ -1,4 +1,4 @@
-package basics;
+package advanced.objects;
 
 public class FinalParent {
 	private String lastName;

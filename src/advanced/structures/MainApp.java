@@ -1,7 +1,11 @@
-package basics;
+package advanced.structures;
 
 import java.util.Arrays;
 import java.util.List;
+
+import advanced.objects.Child;
+import advanced.objects.ChildOfFinalParent;
+import basics.AutoBoxingLesson;
 
 public class MainApp {
 	public static void main(String args []) {
