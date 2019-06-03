@@ -1,4 +1,4 @@
-package advanced.structures;
+package advanced.objects;
 
 public class Parent {
 	public String publicName;

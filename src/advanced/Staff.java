@@ -1,4 +1,4 @@
-ackage advanced;
+package advanced;
 
 public class Staff {
 

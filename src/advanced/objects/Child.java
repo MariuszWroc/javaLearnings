@@ -1,7 +1,5 @@
 package advanced.objects;
 
-import advanced.structures.Parent;
-
 public class Child extends Parent{
 
 	public Child(String publicName, Long packageNumber, Double protectedNumber, Integer privateNumber) {
