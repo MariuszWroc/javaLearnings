@@ -1,4 +1,4 @@
-package advanced;
+package advanced.polymorph;
 
 public class ChildTwo extends Parent{
 	private String name;

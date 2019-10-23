@@ -1,4 +1,4 @@
-package advanced;
+package advanced.polymorph;
 
 public class Parent {
 	private String name;
