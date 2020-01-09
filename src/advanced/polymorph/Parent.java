@@ -10,4 +10,8 @@ public class Parent {
 	public void showName() {
 		System.out.println("Rodzic nazywa siê " + name);
 	}
+	
+	public void showAge(Integer age) {
+		System.out.println("Rodzic ma lat " + age);
+	}
 }
