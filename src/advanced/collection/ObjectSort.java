@@ -1,4 +1,4 @@
-package advanced;
+package advanced.collection;
 
 public class ObjectSort implements Comparable<ObjectSort>{
 	private Integer id;
