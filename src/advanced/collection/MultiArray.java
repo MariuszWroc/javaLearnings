@@ -1,4 +1,4 @@
-package advanced;
+package advanced.collection;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package advanced;
+package advanced.collection;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,6 +11,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
+
+import advanced.MyKey;
+import advanced.ObjectSort;
 
 public class MyCollections {
 
