@@ -12,9 +12,6 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import advanced.MyKey;
-import advanced.ObjectSort;
-
 public class MyCollections {
 
 	public static void main(String[] args) {

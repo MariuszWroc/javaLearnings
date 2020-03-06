@@ -1,4 +1,4 @@
-package advanced;
+package advanced.collection;
 
 public class MyKey {
 
