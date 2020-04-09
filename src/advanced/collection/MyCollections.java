@@ -8,6 +8,7 @@ import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -18,14 +19,14 @@ public class MyCollections {
 		List<String> strings = new ArrayList<>();
 		List<Integer> integers = new LinkedList<>();
 		
-		Map<MyKey, String> hashMap = new HashMap<>();
+		Map<MyHashKey, Integer> hashMap = new HashMap<>();
 		Map<Integer, String> treeMap = new TreeMap<>();
 
-		hashMap.put(new MyKey(), "Something");
-		hashMap.put(new MyKey(), "Nothing");
-		hashMap.put(new MyKey(), "Other");
+		hashMap.put(new MyHashKey("Something"), 10);
+		hashMap.put(new MyHashKey("Nothing"), 20);
+		hashMap.put(new MyHashKey("Other"), 30);
 
-		for (Map.Entry<MyKey, String> item : hashMap.entrySet()) {
+		for (Entry<MyHashKey, Integer> item : hashMap.entrySet()) {
 			System.out.println(item.getKey());
 			System.out.println(item.getValue());
 		}
