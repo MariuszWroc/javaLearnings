@@ -1,5 +1,7 @@
 package algorithms;
 
-public class Recursion {
+import java.util.ArrayList;
 
+public class Recursion {
+	ArrayList list;
 }
