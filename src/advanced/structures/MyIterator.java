@@ -24,6 +24,4 @@ public class MyIterator<T> implements Iterator<T>{
         }
         throw new NoSuchElementException();
 	}
-
-
 }

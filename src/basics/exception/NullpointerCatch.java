@@ -1,15 +1,34 @@
 package basics.exception;
 
-import java.util.ArrayList;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class NullpointerCatch {
 
-	public static void main(String [] args) {
+	public static void main(String [] args) throws IOException {
 		try {
-			ArrayList<String> list = null;
-			list.get(0);
-		} catch (Exception e) {
-			System.out.println("Nullpointer catched");
+			fileFacade();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} finally {
+			System.out.println("finally");
+			System.exit(0);
+			
+		}
+		StringBuffer name = null;
+	}
+
+	private static void fileFacade() throws IOException {
+		FileReader file = null;
+		try {
+			file = new FileReader("c:\\somefile.txt");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} finally {
+			System.exit(0);
+			System.out.println("finally");
+			file.close();
 		}
 	}
 }
