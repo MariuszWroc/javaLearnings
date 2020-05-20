@@ -1,6 +1,6 @@
 package algorithms.recursive;
 
-public class StribgCopy {
+public class StringCopy {
 
 	public static void main(String[] args) {
 		String s1 = "hello";
