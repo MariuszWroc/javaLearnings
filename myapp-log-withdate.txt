@@ -1,2 +1,4 @@
+Copy date: 2020-06-01T08:55:13.453Z
 advanced.logger.LoggerUsage, main, Teraz logi trafia tez do pliku, 2020-05-28
+Copy date: 2020-06-01T08:55:13.545Z
 advanced.logger.LoggerUsage, main, null, 2020-05-28
