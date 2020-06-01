@@ -16,12 +16,15 @@ public class LoggerUsage {
 			logger.info(LoggerUsage.class.getSimpleName());
 		}
 		
+		
+		logger.severe("Hello world!");
+		logger.warning("Hello world!");
+		logger.info("Hello world!");
+		logger.config("Hello world!");
 		logger.fine("Hello world!");
 		logger.finer("Hello world!");
 		logger.finest("Hello world!");
-		logger.info("Hello world!");
-		logger.severe("Hello world!");
-		logger.warning("Hello world!");
+		
 		
 		FileHandler handler = new FileHandler("myapp-log.txt");
 		handler.setFormatter(new MyFormatter());

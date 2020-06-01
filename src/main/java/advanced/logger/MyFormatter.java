@@ -9,7 +9,7 @@ public class MyFormatter extends Formatter {
 	@Override
 	public String format(LogRecord record) {
 		return record.getSourceClassName() + ", " + record.getSourceMethodName() + ", " 
-				+ LocalDate.now() + "\n";
+				 + record.getMessage() + ", " + LocalDate.now() + "\n";
 	}
 
 }
