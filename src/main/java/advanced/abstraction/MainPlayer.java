@@ -1,4 +1,4 @@
-package advanced.abstracttion;
+package advanced.abstraction;
 
 public class MainPlayer {
 
