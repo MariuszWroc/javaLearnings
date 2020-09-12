@@ -1,14 +1,16 @@
 package advanced.generics;
 
-public class Restaurant<ui, U> {
-	ui category;
+import java.util.List;
+
+public class Restaurant<T extends Orderable, U> {
+	T category;
 	U id;
 	
-	public ui getCategory() {
+	public T getCategory() {
 		return category;
 	}
 
-	public void setCategory(ui category) {
+	public void setCategory(T category) {
 		this.category = category;
 	}
 
