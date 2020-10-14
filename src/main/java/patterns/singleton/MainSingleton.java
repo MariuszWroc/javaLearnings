@@ -1,10 +1,14 @@
 package patterns.singleton;
 
 public class MainSingleton {
-
+	static ClassicSingleton instance = ClassicSingleton.getInstance();
+	
 	public static void main(String [] args) {
-		ClassicSingleton.getInstance().methodInSingleton();
-		ClassicSingleton.getInstance().methodInSingleton();
+		SingletonUsage singletonUsage = new SingletonUsage();
+		singletonUsage.useSingleton();
+		
+		instance.methodInSingleton();
+		instance.methodInSingleton();
 		DoubleCheckedSingleton.getInstance().methodInSingleton();
 		DoubleCheckedSingleton.getInstance().methodInSingleton();
 		EnumSingleton.INSTANCE.methodInSingleton();
