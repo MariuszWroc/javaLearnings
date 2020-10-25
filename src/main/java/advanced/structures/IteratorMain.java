@@ -16,11 +16,12 @@ public class IteratorMain {
 		fibonacci.add(5);
 		fibonacci.add(8);
 		
+		System.out.println("Przeglad ciagu fibonacciego za pomoca zwyklej petli:");
 		fibonacci.forEach(x -> System.out.println(x));
 		
 		MyList myList = new MyList(fibonacci);
 
-
+		System.out.println("Przeglad ciagu fibonacciego za pomoca nowego iteratora:");
 		Iterator<Integer> iterator = myList.iterator();
 		while (iterator.hasNext()) {
 			System.out.println(iterator.next());

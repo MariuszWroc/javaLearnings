@@ -11,6 +11,6 @@ public class MyList implements Iterable<Integer> {
 	 }
 
 	 public Iterator<Integer> iterator() {
-	  return new MyIterator<Integer>(list.size());
+	  return new MyIterator<>(list);
 	 }
 }
