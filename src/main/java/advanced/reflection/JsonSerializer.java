@@ -3,6 +3,7 @@ package advanced.reflection;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
 public class JsonSerializer {
@@ -21,9 +22,12 @@ public class JsonSerializer {
 	}
 
 	private static String toJsonString(Map<String, String> jsonMap) { 
-		String elementsString = jsonMap.entrySet().stream()
-				.map(x -> "\"" + x.getKey() + "\":\"" + x.getValue() + "\"") 
-				.collect(Collectors.joining(","));
+		StringBuilder elementsStringBuilder = new StringBuilder("");
+		
+		for (Map.Entry<String, String> element : jsonMap.entrySet()) {
+			elementsStringBuilder.append("\"," + element.getKey() + "\":\"" + element.getValue());
+		}
+		String elementsString = elementsStringBuilder.toString().replaceFirst(",", "");
 	
 		return "{" + elementsString + "}";
 	}
